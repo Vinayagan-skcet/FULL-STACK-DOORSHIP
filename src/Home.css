@@ -1,0 +1,124 @@
+/* General Layout */
+.app {
+	display: flex;
+	height: 100vh;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .sidebar {
+	width: 250px; /* Adjust the width as needed */
+	background-color: #f5f5f5;
+	padding: 24px 16px;
+	position: fixed; /* Fixed position */
+	top: 0;
+	left: 0;
+	height: 100vh; /* Full height */
+	overflow-y: auto; /* Allows scrolling if content overflows */
+  }
+  
+  .main-content {
+	margin-left: 250px; /* Space for the sidebar */
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	background-color: #fefefe;
+	color: #333;
+	padding: 32px;
+	height: 100vh; /* Full height */
+	overflow-y: auto; /* Allows scrolling if content overflows */
+  }
+  
+  /* Header */
+  .site-header {
+	background-color: #007bff;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+  }
+  
+  .site-header nav a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 24px;
+	font-weight: 700;
+  }
+  
+  /* Main Content */
+  main {
+	flex: 1;
+	padding: 20px;
+	background-color: #f9f9f9;
+  }
+  
+  .home-page {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+	max-width: 1200px;
+	margin: 0 auto;
+  }
+  
+  .block {
+	flex: 1;
+	text-align: center;
+  }
+  
+  .block img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Headings and Text */
+  h1 {
+	font-size: 36px;
+	color: #333;
+	margin-bottom: 20px;
+	font-weight: 700;
+  }
+  
+  .intro {
+	font-size: 18px;
+	color: #666;
+	margin-bottom: 20px;
+  }
+  
+  p {
+	font-size: 16px;
+	color: #444;
+	line-height: 1.6;
+	margin-bottom: 20px;
+  }
+  
+  /* Button */
+  .button {
+	display: inline-block;
+	background-color: #28a745;
+	color: #fff;
+	padding: 12px 24px;
+	border-radius: 8px;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 600;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .button:hover {
+	background-color: #218838;
+	transform: scale(1.05);
+  }
+  
+  /* Footer */
+  footer {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+  }
+  
+  footer small {
+	font-size: 14px;
+  }
+  

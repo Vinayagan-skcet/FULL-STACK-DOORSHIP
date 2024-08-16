@@ -1,0 +1,179 @@
+/* General Styles */
+.article {
+  padding: 20px;
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f0f0;
+}
+
+.grid__item--1of1 {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.text-center {
+  text-align: center;
+}
+
+h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 30px;
+  font-weight: 700;
+}
+
+/* Tabs Container */
+.tabs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+/* Tab Labels */
+label {
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  padding: 12px 25px;
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  margin: 5px;
+  background-color: #fff;
+  color: #333;
+  transition: all 0.3s ease;
+  font-size: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+label:hover {
+  background-color: #fafafa;
+  border-color: #bbb;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Icons */
+label i {
+  margin-right: 12px;
+  font-size: 28px;
+}
+
+/* Active Tab */
+.tab__content {
+  display: none;
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #fff;
+  border: 2px solid #ddd;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: opacity 0.3s ease;
+}
+
+.tab__content.active {
+  display: block;
+}
+
+/* Sub-Tabs */
+.sub-tabs {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.sub-tabs button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  margin: 0 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 16px;
+}
+
+.sub-tabs button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  resize: vertical;
+  box-sizing: border-box;
+  font-size: 16px;
+  line-height: 1.6;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Media */
+video {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+canvas {
+  display: none;
+}
+
+/* Capture Image */
+img {
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  margin-top: 10px;
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
+button {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  padding: 12px 24px;
+  margin: 10px 0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: #218838;
+  transform: scale(1.05);
+}
+
+button:disabled {
+  background-color: #6c757d;
+  cursor: not-allowed;
+}
+
+/* Horizontal Tabs Layout */
+.tabs label {
+  flex: 1;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 5px;
+  height: 50px;
+}
+
+/* Icon Colors for Tabs */
+.icon.email-cal { color: #ff5722; } /* Orange for Order 1 */
+.icon.snapshot { color: #3f51b5; } /* Blue for Order 2 */
+.icon.inbox-apps { color: #009688; } /* Teal for Order 3 */
+.icon.log-calls { color: #e91e63; } /* Pink for Order 4 */
